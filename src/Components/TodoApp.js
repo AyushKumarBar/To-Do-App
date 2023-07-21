@@ -30,7 +30,7 @@ const TodoApp = () => {
         }
     }, []);
 
- 
+
 
     const add = (event) => {
         event.preventDefault();
@@ -159,6 +159,7 @@ const TodoApp = () => {
                                                     className='form-control'
                                                     name='editedTodo'
                                                     value={editedTodo}
+                                                    required
 
                                                     onChange={(e) => setEditedTodo(e.target.value)}
                                                 />
