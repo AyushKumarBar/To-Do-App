@@ -1,4 +1,4 @@
-<h1>GitHub Documentation for Responsive Todo Website (React.js & CSS)</h1>
+<h1>Responsive Todo Website (React.js & CSS)</h1>
     <h2>Table of Contents</h2>
     <ol>
         <li>Introduction</li>
