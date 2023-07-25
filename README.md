@@ -1,18 +1,83 @@
-<h1> Hey there! I'm Ayush 👋 </h1>
-<h2> A Passionate Software Developer From India 🇮🇳 </h2>
-<img align="right" alt="GIF" src="https://camo.githubusercontent.com/61491d59e71fec5c794945fed916a4a682b6c0404fc31f30b08a0d919c558404/68747470733a2f2f696d616765732e73717561726573706163652d63646e2e636f6d2f636f6e74656e742f76312f3537363966633430316236333162616231616464623261622f313534313538303631313632342d5445363451474b524a4738535741495553374e532f6b6531375a77644742546f6464493870446d34386b506f73776c7a6a53564d4d2d53784f703743563539425a772d7a505067646e346a557756634a45315a7657515578776b6d794578676c4e714770304976544a5a616d574c49327a76595748384b332d735f3479737a63703272795449304871544f6161556f68724938504936465879386339505774426c7141566c555335697a7064634958445a71445976707252715a32395077306f2f636f64696e672d667265616b2e676966" width="500"/>
-<h3> 👨🏻‍💻 About Me </h3>
+<h1>GitHub Documentation for Responsive Todo Website (React.js & CSS)</h1>
+    <h2>Table of Contents</h2>
+    <ol>
+        <li>Introduction</li>
+        <li>Requirements</li>
+        <li>Installation</li>
+        <li>Usage</li>
+        <li>Features</li>
+        <li>Technologies Used</li>
+        <li>Contributing</li>
 
-- 🔭 &nbsp; I’m currently learning React and React Native for Development
-- 🤔 &nbsp; Exploring new technologies and developing software solutions and quick hacks.
-- 🎓 &nbsp; Studying Computer Science, computer programming and Mathematics.
-- 💼 &nbsp; full-stack developer and Data Science.
-- 🌱 &nbsp; Enthusiast in full-Stack and Artificial Intelligence .
-- ✍️ &nbsp; Watching universe and trying out latest design trends as hobbies/side hustles.
-- 😴 &nbsp; I belive, a perfect nap can be the ultimate solution for any stress. 
+   </ol>
+    <h2>1. Introduction</h2>
+    <p>
+        This documentation provides a guide to the Todo Website project hosted on GitHub. The Todo Website is a
+        responsive application built using React.js and CSS. It allows users to manage their tasks and to-do lists
+        effectively.
+    </p>
 
-<h2 align='center'>
-&nbsp; <a href="https://ayushkumarbar.github.io/To-Do-App/" target="_blank" rel="noopener noreferrer">To-Do App</br><img src="https://cdn0.iconfinder.com/data/icons/seo-smart-pack/128/grey_new_seo-43-512.png" width="50" /></a>  
-</h2>
+   <h2>2. Requirements</h2>
+    <p>
+        To run the Todo Website project locally, you need the following software installed on your system:
+    </p>
+    <ul>
+        <li>Node.js (with npm) - Get it from <a href="https://nodejs.org/">https://nodejs.org/</a></li>
+        <li>Git - Get it from <a href="https://git-scm.com/">https://git-scm.com/</a></li>
+    </ul>
+    <h2>3. Installation</h2>
+    <p>
+        To install and run the Todo Website on your local machine, follow these steps:
+    </p>
+    <ol>
+        <li>Clone the repository using Git:</li>
+    </ol>
+    <pre><code>git clone https://github.com/your-username/todo-website.git</code></pre>
+    <ol start="2">
+        <li>Change into the project directory:</li>
+    </ol>
+    <pre><code>cd todo-website</code></pre>
+    <ol start="3">
+        <li>Install the project dependencies:</li>
+    </ol>
+    <pre><code>npm install</code></pre>
+    <h2>4. Usage</h2>
+    <p>
+        Once the installation is complete, you can run the Todo Website locally with the following command:
+    </p>
+    <pre><code>npm start</code></pre>
+    <p>
+        This will start the development server, and you can access the website by visiting
+        <a href="http://localhost:3000">http://localhost:3000</a> in your web browser.
+    </p>
+    <h2>5. Features</h2>
+    <p>
+        The Todo Website comes with the following features:
+    </p>
+    <ul>
+        <li>Add, edit, and delete tasks.</li>
+        <li>Mark tasks as completed.</li>
+        <li>Filter tasks based on their status (All, Active, Completed).</li>
+        <li>Responsive design, allowing seamless usage on various devices.</li>
+    </ul>
 
+   <h2>6. Technologies Used</h2>
+    <p>
+        The Todo Website is built using the following technologies:
+    </p>
+    <ul>
+        <li>React.js: A popular JavaScript library for building user interfaces.</li>
+        <li>CSS: Used for styling the user interface and making the website responsive.</li>
+    </ul>
 
+  <h2>7. Contributing</h2>
+    <p>
+        We welcome contributions to the Todo Website project. If you want to contribute, please follow these steps:
+    </p>
+    <ol>
+        <li>Fork the repository from <a href="https://github.com/your-username/todo-website">https://github.com/AyushKumarBar/To-Do-App</a>.</li>
+        <li>Create a new branch with a descriptive name for your feature or bug fix.</li>
+        <li>Make your changes and commit them with clear commit messages.</li>
+        <li>Push your branch to your forked repository.</li>
+        <li>Submit a pull request to the original repository.</li>
+    </ol>
