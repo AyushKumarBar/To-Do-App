@@ -133,13 +133,13 @@ textarea {
 }
 
 .btn-remove {
-  background-color: #dc3545;
-  color: #fff;
+  background-color: #28a745;
+  color: #000;
   transition: background-color 0.3s;
 }
 
 .btn-remove:hover {
-  background-color: #c82333;
+  background-color: #54ed12;
 }
 
 /* Buttuons end */
