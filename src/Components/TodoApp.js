@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import TransitionGroup from 'react-transition-group/TransitionGroup';
 import './TodoApp.css'
+import IMG from './img.jpg'
+
 
 const TodoApp = () => {
     const [todo, setTodo] = useState('');
@@ -91,7 +93,7 @@ const TodoApp = () => {
     const getTextAreaRows = (text) => {
 
         const minRows = 1;
-        const maxRows = 10;
+        const maxRows = 5;
         const newlineCount = (text.match(/\n/g) || []).length;
         const rowCount = Math.min(Math.max(minRows, newlineCount + 1), maxRows);
 
@@ -107,11 +109,15 @@ const TodoApp = () => {
     return (
         <div className='main-container slider-thumb'>
 
+
+            <img className='image' src={IMG} />
+
             <div className='form-container'>
 
-                <h1 data-shadow='~To-Do'>~To-Do</h1>
+                <h1 data-shadow='~To-Do'>~To-Do : {todos.length}</h1>
 
                 <form onSubmit={add} className='form' autoComplete='off'>
+
                     <div className='input'>
                         <div className='input-group'>
                             <textarea
@@ -121,6 +127,7 @@ const TodoApp = () => {
                                 placeholder='Add To-Do'
                                 name='todo'
                                 rows={getTextAreaRows}
+
                                 value={todo}
                                 onChange={handleChange}
                             />
@@ -138,12 +145,10 @@ const TodoApp = () => {
                                 </button>
                             </div>
                         </div>
-                        <p className='form-text text-muted'>
+                        {/* <p className='form-text text-muted'>
                             To-Do : {todos.length}
-                        </p>
+                        </p> */}
                     </div>
-
-
 
                     <div className='todo-list list'>
                         <TransitionGroup {...groupProps}>
@@ -155,7 +160,7 @@ const TodoApp = () => {
                                             {isEditing === item.id ? (
                                                 <textarea
                                                     type='text'
-                                                    rows={getTextAreaRows}
+                                                    // rows={getTextAreaRows}
                                                     className='form-control'
                                                     name='editedTodo'
                                                     value={editedTodo}
@@ -168,7 +173,7 @@ const TodoApp = () => {
 
                                                 <textarea
                                                     className='form-control'
-                                                    rows={getTextAreaRows}
+                                                    // rows={getTextAreaRows}
                                                     readOnly
                                                     value={item.text}
                                                 ></textarea>
@@ -179,6 +184,7 @@ const TodoApp = () => {
                                             <div className='input-group-buttons'>
                                                 {isEditing === item.id ? (
                                                     <button
+                                                        title='Save'
                                                         onClick={saveEdit}
                                                         type='button'
                                                         className='btn btn-sm btn-save mr-2'
@@ -188,7 +194,7 @@ const TodoApp = () => {
                                                         </span>
                                                     </button>
                                                 ) : (
-                                                    <button
+                                                    <button title='Edit'
                                                         onClick={() => startEdit(item.id)}
                                                         type='button'
                                                         className='btn btn-sm btn-edit mr-2'
@@ -198,14 +204,14 @@ const TodoApp = () => {
                                                         </span>
                                                     </button>
                                                 )}
-                                                <button
+                                                <button title='Completed!'
                                                     onClick={remove}
                                                     data-id={item.id}
                                                     type='button'
                                                     className='btn btn-sm btn-remove'
                                                 >
                                                     <span class="material-symbols-outlined">
-                                                        delete
+                                                        done
                                                     </span>
                                                 </button>
                                             </div>
@@ -217,6 +223,10 @@ const TodoApp = () => {
                             ))}
                         </TransitionGroup>
                     </div>
+
+
+
+
                 </form>
             </div>
         </div>

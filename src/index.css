@@ -3,8 +3,6 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  background: linear-gradient(90deg, #9514ff 20%, 60%, #00ffdd 90%);
 }
 
 /* Add smooth scrolling */
