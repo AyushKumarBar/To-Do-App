@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+<h1>Responsive Todo Website (React.js & CSS)</h1>
+<h2><a href = "https://ayushkumarbar.github.io/To-Do-App/">Visit Website</a></h2>
+    <h2>Table of Contents</h2>
+    <ol>
+        <li>Introduction</li>
+        <li>Requirements</li>
+        <li>Installation</li>
+        <li>Usage</li>
+        <li>Features</li>
+        <li>Technologies Used</li>
+        <li>Contributing</li>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+   </ol>
+    <h2>1. Introduction</h2>
+    <p>
+        This documentation provides a guide to the Todo Website project hosted on GitHub. The Todo Website is a
+        responsive application built using React.js and CSS. It allows users to manage their tasks and to-do lists
+        effectively.
+    </p>
 
-## Available Scripts
+   <h2>2. Requirements</h2>
+    <p>
+        To run the Todo Website project locally, you need the following software installed on your system:
+    </p>
+    <ul>
+        <li>Node.js (with npm) - Get it from <a href="https://nodejs.org/">https://nodejs.org/</a></li>
+        <li>Git - Get it from <a href="https://git-scm.com/">https://git-scm.com/</a></li>
+    </ul>
+    <h2>3. Installation</h2>
+    <p>
+        To install and run the Todo Website on your local machine, follow these steps:
+    </p>
+    <ol>
+        <li>Clone the repository using Git:</li>
+    </ol>
+    <pre><code>git clone https://github.com/your-username/todo-website.git</code></pre>
+    <ol start="2">
+        <li>Change into the project directory:</li>
+    </ol>
+    <pre><code>cd todo-website</code></pre>
+    <ol start="3">
+        <li>Install the project dependencies:</li>
+    </ol>
+    <pre><code>npm install</code></pre>
+    <h2>4. Usage</h2>
+    <p>
+        Once the installation is complete, you can run the Todo Website locally with the following command:
+    </p>
+    <pre><code>npm start</code></pre>
+    <p>
+        This will start the development server, and you can access the website by visiting
+        <a href="http://localhost:3000">http://localhost:3000</a> in your web browser.
+    </p>
+    <h2>5. Features</h2>
+    <p>
+        The Todo Website comes with the following features:
+    </p>
+    <ul>
+        <li>Add, edit, and delete tasks.</li>
+        <li>Mark tasks as completed.</li>
+        <li>Filter tasks based on their status (All, Active, Completed).</li>
+        <li>Responsive design, allowing seamless usage on various devices.</li>
+    </ul>
 
-In the project directory, you can run:
+   <h2>6. Technologies Used</h2>
+    <p>
+        The Todo Website is built using the following technologies:
+    </p>
+    <ul>
+        <li>React.js: A popular JavaScript library for building user interfaces.</li>
+        <li>CSS: Used for styling the user interface and making the website responsive.</li>
+    </ul>
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  <h2>7. Contributing</h2>
+    <p>
+        We welcome contributions to the Todo Website project. If you want to contribute, please follow these steps:
+    </p>
+    <ol>
+        <li>Fork the repository from <a href="https://github.com/your-username/todo-website">https://github.com/AyushKumarBar/To-Do-App</a>.</li>
+        <li>Create a new branch with a descriptive name for your feature or bug fix.</li>
+        <li>Make your changes and commit them with clear commit messages.</li>
+        <li>Push your branch to your forked repository.</li>
+        <li>Submit a pull request to the original repository.</li>
+    </ol>
