@@ -90,15 +90,6 @@ const TodoApp = () => {
     };
 
 
-    const getTextAreaRows = (text) => {
-
-        const minRows = 1;
-        const maxRows = 5;
-        const newlineCount = (text.match(/\n/g) || []).length;
-        const rowCount = Math.min(Math.max(minRows, newlineCount + 1), maxRows);
-
-        return rowCount;
-    };
 
     const reverseTodos = () => {
         setTodos((prevTodos) => [...prevTodos].reverse());
@@ -106,15 +97,17 @@ const TodoApp = () => {
         localStorage.setItem('todos', JSON.stringify([...todos].reverse()));
     };
 
+
+
     return (
         <div className='main-container slider-thumb'>
 
 
-            <img className='image' src={IMG} />
+            <img className='image' src={IMG} alt='img' />
 
             <div className='form-container'>
 
-                <h1 data-shadow='~To-Do'>~To-Do : {todos.length}</h1>
+                {/* <h1 data-shadow='~To-Do'>~To-Do : {todos.length}</h1> */}
 
                 <form onSubmit={add} className='form' autoComplete='off'>
 
@@ -126,31 +119,32 @@ const TodoApp = () => {
                                 id='todoField'
                                 placeholder='Add To-Do'
                                 name='todo'
-                                rows={getTextAreaRows}
+
 
                                 value={todo}
                                 onChange={handleChange}
                             />
                             <div className='input-group-buttons'>
                                 <button onClick={add} className='btn btn-add' type='button'>
-                                    <span class="material-symbols-outlined">
+                                    <span className="material-symbols-outlined">
                                         add
                                     </span>
                                 </button>
 
                                 <button onClick={reverseTodos} className='btn btn-reverse' type='button'>
-                                    <span class="material-symbols-outlined">
+                                    <span className="material-symbols-outlined">
                                         swap_vert
                                     </span>
                                 </button>
                             </div>
                         </div>
-                        {/* <p className='form-text text-muted'>
-                            To-Do : {todos.length}
-                        </p> */}
-                    </div>
 
-                    <div className='todo-list list'>
+                    </div>
+                    <p className='form-text text-muted'>
+                        To-Do : {todos.length}
+                    </p>
+
+                    <div className={`todo-list list ${todos.length > 0 ? 'blur' : ''}`}>
                         <TransitionGroup {...groupProps}>
                             {todos.map((item) => (
                                 <Fade key={item.id} collapse right>
@@ -160,7 +154,7 @@ const TodoApp = () => {
                                             {isEditing === item.id ? (
                                                 <textarea
                                                     type='text'
-                                                    // rows={getTextAreaRows}
+
                                                     className='form-control'
                                                     name='editedTodo'
                                                     value={editedTodo}
@@ -173,7 +167,7 @@ const TodoApp = () => {
 
                                                 <textarea
                                                     className='form-control'
-                                                    // rows={getTextAreaRows}
+
                                                     readOnly
                                                     value={item.text}
                                                 ></textarea>
@@ -189,7 +183,7 @@ const TodoApp = () => {
                                                         type='button'
                                                         className='btn btn-sm btn-save mr-2'
                                                     >
-                                                        <span class="material-symbols-outlined">
+                                                        <span className="material-symbols-outlined">
                                                             save
                                                         </span>
                                                     </button>
@@ -199,7 +193,7 @@ const TodoApp = () => {
                                                         type='button'
                                                         className='btn btn-sm btn-edit mr-2'
                                                     >
-                                                        <span class="material-symbols-outlined">
+                                                        <span className="material-symbols-outlined">
                                                             edit
                                                         </span>
                                                     </button>
@@ -210,8 +204,8 @@ const TodoApp = () => {
                                                     type='button'
                                                     className='btn btn-sm btn-remove'
                                                 >
-                                                    <span class="material-symbols-outlined">
-                                                        done
+                                                    <span className="material-symbols-outlined">
+                                                        delete
                                                     </span>
                                                 </button>
                                             </div>
